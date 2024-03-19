@@ -5,4 +5,4 @@ Título provisório do trabalho
 Projeto de Desenvolvimento de uma plataforma de agendamento para coleta de Eletro-Lixo Problema
 A Empresa Seven está perdendo clientes por não conseguir monitorar e agendar os serviços de coleta de lixo eletrônico.
 Objetivo O principal objetivo é criar software que atenda às necessidades do usuário, seja fácil de usar e entender, seja confiável e tenha um bom desempenho. Além disso, é importante que o software seja escalável, fácil de manter, seguro e eficiente em termos de custos. Também é essencial que seja compatível com várias plataformas e dispositivos.
-Para isto desenvolveremos um software usando HTML,CSS, PHP, JavaScritpt, Node.js, SQLiter, o qual será inserido no site da empresa. Implementaremos a lógica de armazenamento para garantir a segurança dos dados e armazenar as consultas de forma persistente.
+Para isto desenvolveremos um software usando HTML,CSS, PHP, JavaScritpt,Node.js, MySQL, Git-Github o qual será inserido no site da empresa. Implementaremos a lógica de armazenamento para garantir a segurança dos dados e armazenar as consultas de forma persistente.
