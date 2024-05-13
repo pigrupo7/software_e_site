@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap');
+
+
+* , *::after, *::before { box-sizing: border-box;}
+/* a regra acima é utilitária para ajustes no box model(usar sempre em qualque projeto web */
+html {
+    font-size: 18px;
+    /* para a naveção ficar suave quando cliclarmos no menu     scroll-behavior: smooth;
+*/
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../imagens/textura-fundo.png);
+        background-attachment: fixed;
+        font-family: 'Open Sans', Verdana, Arial, sans-serif;
+}
+img { max-width: 100%;}
+
+/* REGRAS DE CSS RESET
+usando radicalmente usa essa regra e tira todos espaços:  * { margin: 0; padding:;} */
+/* para nao tirar de tudo vamos usar a regra dessa forma: */
+
+body, h1, h2, h3, p, figure * {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header, footer {
+    background-color: rgba(128, 128, 128, 0.973);
+    text-align: center;
+}
+
+header {
+    border-bottom: solid 2px;
+    margin-bottom: 7px;
+}
+
+footer {
+    border-top: solid 2px;
+}
+
+
+/* no mais que é todo o meu conteudo (miolo da caixa) usar o  width: e o    margin:  no conteudo todo para alinhar todo conteudo, no caso o espaço laterais e inferior e superior */
+main {
+    width: 95%;
+    margin: auto;
+}
+
+article {
+    background-color: white;
+    box-shadow: grey 1px 1px 5px;
+    margin-bottom: 10px;
+    padding: 7px
+}
+
+
+h1, nav, h2, h3, button {
+    font-family: Orbitron, Verdana, sans-serif;
+}
+
+h2, h3, p { padding: 1% 0; }
+/* da para usar também no paragrafo  p { line-height: ;} */
+
+/* consigo DIMINUIR A IMAGEM INFORMANDO ONDE ELA ESTA E USANDO O   width: px; */
+footer img { width: 30px; }
+
+footer h2 { font-size: 1.2rem; }
+
+footer p { font-size: .75rem; }
+
+section, figure { margin: 2% 0; }
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+/* podemos usar o iframe para mexer no tamanho de imagem ou video ,mapa do google video do youtube */
+iframe { width:100%}
+
+
+/* Regras temporárias:
+Usadas apenas para facilitar a visualização
+de ajustes de cada área que será afetada pelo Flex. */
+/* 
+h1 { background-color: red; }
+h1 a { background-color: green; }
+nav { background-color: yellow; }
+nav a { background-color: lightblue; } */
+
+/* 
+justify-content: center; ajuda a linar a imagem com o texo */
+
+/* configuração do menu para aglomerar conteudo para melhorar o visual */
+
+
+/* h1, h1 a, nav, nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+h1, h1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 a{
+    font-size:1.1rem;
+    }
+/* 
+nav a {
+    height: 50px;
+    font-size: 0.6rem;
+    width: 100%;
+    font-weight:bold;
+} */
+
+/* alterei o codigo abaixo la no  final, esse é aquela função de quando passamos o mouse no menu ele muda de cor */
+
+/* nav a:hover, nav a:focus {
+    background-color: black;
+    color: white;
+} */
+
+h1 {
+    padding: 5px 0;
+    font-size: 1.4rem;
+}
+
+h1 img { width:50px}
+
+
+/* USANDO FILTROS EM IMAGENS PODE TB ACHA O CODIGO DO SITE https://cssgenerator.org/filter-css-generator.html*/
+article img {
+    filter:grayscale(50%);
+   transition: 2s;
+}
+article img:hover { filter: grayscale(0);}
+
+
+
+
+/* REGRAS PARA FORMATAR  FORMULARIO */
+
+
+
+input, textarea {
+    border: solid 2px;
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+}
+
+label { font-size: .7rem;}
+
+
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+button:hover, button:focus {
+    background-color: rgba(32, 32, 41, 0.945);
+    cursor: pointer;  /*altera o curso do mouse */
+} 
+
+
+#voltar-topo { 
+    position: fixed;
+    bottom: 4px;
+    right: 6px;
+   
+    /* top,bottom, left, right, z-index (o z-index lida com profundidade */
+}
+
+#voltar-topo a {
+    background-color: black;
+    color: beige;
+    border: solid 2px;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+
+#voltar-topo a:hover, #voltar-topo a:focus {
+    background-color: blueviolet;
+    }
+
+
+/* Media Queries - Regras especiais Telas a partir de 700px de largura */
+
+/* (a partir de certos tamanhos de tela) */
+@media screen and (min-width: 700px){
+    header .container  {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+    }
+}
+    
+/* Exercícios */
+
+
+
+/* 1) Acesse o HTML da página index e adicione uma div com a classe "grupo" às seções (section) do artigo (article) O Que Fazemos.
+
+
+
+2) Acesse o HTML da página index e adicione uma div com a classe "grupo" aos figures do artigo Nossas Equipes.
+
+
+
+3) No CSS, crie uma nova media query para telas a partir de 750px (esse valor pode mudar), com as seguintes regras/propriedades:
+
+
+-uma classe chamada "grupo", contendo flex, espaçamento entre e flex-wrap: wrap (pesquise do que se trata)
+
+
+-uma regra para as seções contidas na classe "grupo", e para os figures contidos na classe "grupo", contendo largura de 49% (experimente antes usar 50%). */
+
+
+/* (a partir de certos tamanhos de tela), SOBRE O USO flex-wrap: wrap; ele itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas, ou seja exemplo de fotos ou texto que estavam lado a lado numa linha vão ficar em baixo um do outro , de dois em dois , de tres em tres, dependendo do tamanho da tela, tipo quebra de linha */
+@media screen and (min-width: 750px){
+
+    .grupo {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .grupo section, .grupo figure {
+        width: 49%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+/* configurar a largura foi essencial para definir os números de itens que vam ficar lado a lado ou em baixo, e o espaçamento entre elas*/
+}
+
+
+/* mini- exercicio
+crie uma media query para telas a partir de 820px, e aumetne o tamanho geral de todos os textos para 20px
+*/
+
+@media screen and (min-width: 820px){
+   
+    html { font-size: 20px;}
+
+}
+    
+
+ /* Media Queries - Regras especiais Telas a partir de 1066px de largura  */
+
+ 
+@media screen and (min-width: 1066px){
+    .container, main { max-width: 1000px;}
+    header {
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            top: 0;
+            }
+
+
+    #voltar-topo {
+        display: none;
+        /* visibility: hidden; é destinado a esconder tabela,quanto o display:none é de uso geral */
+    } 
+
+    /* a regra a seguir serve para margin do resto do conteudo nao fique no top divido o cabeçalho ter ficado fixo e fora do conteúdo */
+    #topo, #o-que-fazemos, #nossas-equipes, #contato {
+        padding-top: 75px;
+
+    }
+}
+ 
+
+/* NOVO MENU  */
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: rgb(8, 8, 1);
+    padding: 2px 20px;
+    display: block;
+    transition: .2s;
+    font-size: .7rem;
+    font-weight:bold;
+}
+
+nav ul li a:hover{ 
+    background-color: rgb(166, 172, 166);
+    color: white;
+    box-shadow: inset 0 0 8px rgba(23, 29, 23, 0.425);
+}
+
+.drop-hover {
+    position: relative;
+    box-shadow: inset 0 0 7px rgba(20, 180, 20, 0.425);
+    background-color: rgb(126, 221, 126);
+}
+
+
+.drop-hover .drop{
+    position: absolute;
+    background-color: rgb(167, 174, 167);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+
+.drop-hover .drop a{
+   padding:15px;
+}
+
+
+.drop-hover:hover .drop{
+    height: 205px;
+    z-index: 100;
+   
+}

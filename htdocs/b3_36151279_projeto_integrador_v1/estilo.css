@@ -1,0 +1,220 @@
+body {
+    /* width: 100vw;
+    height: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(133, 173, 140), rgb(223, 236, 243));
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(38, 7, 88)          
+}
+
+h1{
+    border-style:outset;
+    padding: 4px;
+    margin-top: -18px;
+     
+  }
+
+
+.box{
+    color: white;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+    width: 30%;
+    margin-top: 40px ;
+}
+
+
+legend{
+    border: 1px solid rgb(144, 196, 178);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(143, 192, 168);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* inclui mais essas configuraçoes acima  fieldset e legend */
+
+
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    max-width: 700px auto;
+    margin: 9px auto;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+  
+  fieldset{
+    border: 3px solid rgb(50, 151, 81);
+    border-style: double;
+}
+
+
+
+    /* 1a: uando a tela atingir 414px : dalterar o tamnho do backgraoud do texto experiencia profissional e texto , alterar posição do titulo formação profissional, aterar a posição do contto diminuir a margin esquerda */
+@media screen and (max-width: 414px) { 
+    .box {
+    top: 29%;
+    left: 50%;
+    width: 50%;
+    margin-top: 60px ; }
+     }
+/* 2a: uando a tela atingir 375px : alterar o tamanho do backgraoud do texto experiencia profissional e texto , alterar posição do titulo formação profissional, aterar a posição do contto diminuir a margin esquerda */
+@media screen and (max-width: 414px) { 
+    .box  {
+    top: 39%;
+    left: 50%;
+    width: 50%;
+    margin-top: 60px ; }
+     }
+
+ /* 3a: uando a tela atingir 412px : alterar o tamanho  */
+ @media screen and (max-width: 412px) {
+    .box {
+        top: 30%;
+        left: 40%;
+        width: 50%;
+        margin-top: 40px ; }
+         }
+  /* 4a: uando a tela atingir 430px : alterar o tamanho  */
+
+@media screen and (max-width: 430px) {
+    .box {
+        top: 28%;
+        left: 50%;
+        width: 50%;
+        margin-top: 40x ; }
+         }  
+ /* 4a: uando a tela atingir 430px : alterar o tamanho  */
+
+ @media screen and (max-width: 390px) {
+    .box {
+        top: 30%;
+        left: 50%;
+        width: 50%;
+        margin-top: 45px ; }
+         }  
+
+     /* configuração do estilo dos botoes consultar e cancelar */
+     
+
+     .outrasopcao{
+        color: rgb(194, 23, 23);
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        border-radius: 15px;
+        width: 30%;
+        margin-top: 140px;
+        float: left;
+        }
+    
+
+     .outrasopcao a {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(170, 195, 197);
+        background-color: rgb(51, 38, 38);
+        padding: 18px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+        border: 1px solid rgb(50, 151, 81);
+        height: 15px;
+        width: 140px;
+        margin-top: 5px;
+        display:inline-block;
+        unicode-bidi:normal;       
+        
+    }
+
+/* 4a: uando a tela atingir 375px : alterar o tamanho do backgraoud do texto experiencia profissional e texto , alterar posição do titulo formação profissional, aterar a posição do contto diminuir a margin esquerda */
+@media screen and (max-width: 375px) { 
+    .outrasopcao {
+    top: 82%;
+    left: 50%;
+    width: 50%;
+    margin-top: 170px ; }
+     }
+
+@media screen and (max-width: 375px) { 
+    .outrasopcao a {
+    height: 15px;
+        width: 90px;
+        margin-top: 5px; }
+     }
+
+
+
+@media screen and (max-width: 430px) { 
+            .outrasopcao  {
+            top: 55%;
+            left: 50%;
+            width: 50%;
+            margin-top: 170px; }
+             }
+
+@media screen and (max-width: 390px) { 
+ .outrasopcao  {
+    top: 57%;
+    left: 50%;
+    width: 50%;
+    margin-top: 200px; }
+
+    .outrasopcao a {
+        height: 10px;
+        width: 130px;
+        margin-top: 1x; }
+                  }
+                
