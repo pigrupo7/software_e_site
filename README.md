@@ -1,4 +1,4 @@
-Este é um projeto integrador, que sera apresentado para UNIVESP
+Este é um PROJETO INTEGRADOR I (PRIMEIRO SEMESTRE DE 2024), que sera apresentado para UNIVESP
 TECNOLOGIA DA INFORMAÇÃO / ENG. DA COMPUTAÇÃO
 Tema escolhido pelo grupo com base no tema norteador da Univesp :“Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão.”
 Título provisório do trabalho
